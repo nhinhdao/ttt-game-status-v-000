@@ -37,7 +37,7 @@ def over?(board)
 end
 
 def winner(board)
-      binding.pry
+      # binding.pry
       if won?(board) && won?(board).detect {|index| index == "X"}
             "X"
       elsif won?(board) && won?(board).detect {|index| index == "O"}
