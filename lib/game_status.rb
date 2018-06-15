@@ -33,6 +33,8 @@ def won?(board)
                   return win_combination
             if board[2] == "X" && board[4] == "X" && board[6] == "X"
                   return win_combination
+            else
+                  false
             end
       end
 end
