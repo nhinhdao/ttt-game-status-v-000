@@ -39,7 +39,7 @@ end
 def winner(board)
       if won?(board).detect {|index| index == "X"}
             "X"
-      if won?(board).detect {|index| index == "O"}
+      elsif won?(board).detect {|index| index == "O"}
             "O"
       end
 end
