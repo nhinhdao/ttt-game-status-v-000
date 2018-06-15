@@ -37,9 +37,9 @@ def over?(board)
 end
 
 def winner(board)
-      if won?(board).detect {|index| index == "X"}
+      if won?(board) && board.detect {|index| index == "X"}
             "X"
-      elsif won?(board).detect {|index| index == "O"}
+      elsif won?(board) && board.detect {|index| index == "O"}
             "O"
       end
 end
