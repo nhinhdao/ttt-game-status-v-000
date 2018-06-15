@@ -51,5 +51,6 @@ end
 #       # end
 # end
 
-def full
+def full?(board)
+      binding.pry
 end
