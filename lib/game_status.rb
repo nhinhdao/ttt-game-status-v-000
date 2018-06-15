@@ -19,21 +19,22 @@ def won?(board)
       WIN_COMBINATIONS.each do |win_combination|
             if board[0] == "X" && board[1] == "X" && board[2] == "X"
                   return win_combination
-            if board[3] == "X" && board[4] == "X" && board[5] == "X"
+            elsif board[3] == "X" && board[4] == "X" && board[5] == "X"
                   return win_combination
-            if board[6] == "X" && board[7] == "X" && board[8] == "X"
+            elsif board[6] == "X" && board[7] == "X" && board[8] == "X"
                   return win_combination
-            if board[0] == "X" && board[3] == "X" && board[6] == "X"
+            elsif board[0] == "X" && board[3] == "X" && board[6] == "X"
                   return win_combination
-            if board[1] == "X" && board[4] == "X" && board[7] == "X"
+            elsif board[1] == "X" && board[4] == "X" && board[7] == "X"
                   return win_combination
-            if board[2] == "X" && board[5] == "X" && board[8] == "X"
+            elsif board[2] == "X" && board[5] == "X" && board[8] == "X"
                   return win_combination
-            if board[0] == "X" && board[4] == "X" && board[8] == "X"
+            elsif board[0] == "X" && board[4] == "X" && board[8] == "X"
                   return win_combination
-            if board[2] == "X" && board[4] == "X" && board[6] == "X"
+            elsif board[2] == "X" && board[4] == "X" && board[6] == "X"
                   return win_combination
             else
                   false
             end
       end
+end
