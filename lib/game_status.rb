@@ -16,8 +16,9 @@ WIN_COMBINATIONS = [
   ]
 
 def won?(board)
-      # WIN_COMBINATIONSS.each do |WIN_COMBINATIONS|
-            if board[0] == "X" && board[1] == "X" && board[2] == "X"
+      WIN_COMBINATIONS.each do |win_combination|
+            win_combination.each do |win_index|
+            if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X"
                    WIN_COMBINATIONS[0]
             elsif board[3] == "X" && board[4] == "X" && board[5] == "X"
                    WIN_COMBINATIONS[1]
@@ -37,3 +38,5 @@ def won?(board)
                   false
             end
 end
+
+def full
