@@ -18,21 +18,21 @@ WIN_COMBINATIONS = [
 def won?(board)
       # WIN_COMBINATIONSS.each do |WIN_COMBINATIONS|
             if board[0] == "X" && board[1] == "X" && board[2] == "X"
-                  return WIN_COMBINATIONS[0]
+                   WIN_COMBINATIONS[0]
             elsif board[3] == "X" && board[4] == "X" && board[5] == "X"
-                  return WIN_COMBINATIONS[1]
+                   WIN_COMBINATIONS[1]
             elsif board[6] == "X" && board[7] == "X" && board[8] == "X"
-                  return WIN_COMBINATIONS[2]
+                   WIN_COMBINATIONS[2]
             elsif board[0] == "X" && board[3] == "X" && board[6] == "X"
-                  return WIN_COMBINATIONS[3]
+                   WIN_COMBINATIONS[3]
             elsif board[1] == "X" && board[4] == "X" && board[7] == "X"
-                  return WIN_COMBINATIONS[4]
+                   WIN_COMBINATIONS[4]
             elsif board[2] == "X" && board[5] == "X" && board[8] == "X"
-                  return WIN_COMBINATIONS[5]
+                   WIN_COMBINATIONS[5]
             elsif board[0] == "X" && board[4] == "X" && board[8] == "X"
-                  return WIN_COMBINATIONS[6]
+                   WIN_COMBINATIONS[6]
             elsif board[2] == "X" && board[4] == "X" && board[6] == "X"
-                  return WIN_COMBINATIONS[7]
+                   WIN_COMBINATIONS[7]
             else
                   false
             end
