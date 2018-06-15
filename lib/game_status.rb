@@ -25,6 +25,9 @@ def won?(board)
 end
 
 def full?(board)
-      # binding.pry
       board.all? { |index| index != " " && index != nil}
+end
+
+def draw?(board)
+      !won?(board) && full(board)
 end
