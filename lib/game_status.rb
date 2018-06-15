@@ -38,9 +38,9 @@ end
 
 def winner(board)
       # binding.pry
-      if won?(board) && won?(board).detect {|index| index == "X"}
+      if won?(board) && board[won?(board)[0]] == "X"
             "X"
-      elsif won?(board) && won?(board).detect {|index| index == "O"}
+      elsif won?(board) && board[won?(board)[0]] == "O"
             "O"
       end
 end
