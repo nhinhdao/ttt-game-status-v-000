@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
 def won?(board)
       # binding.pry
 
-      WIN_COMBINATIONS.each do |combo|
+      WIN_COMBINATIONS.detect do |combo|
             board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && board[combo[0]] != " "
       end
 end
