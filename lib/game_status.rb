@@ -36,7 +36,7 @@ def over?(board)
       (won?(board) && !full?(board))|| draw?(board) || (won?(board) && full?(board))
 end
 
-def winner?(board)
+def winner(board)
       if won?(board).include?("X")
             "X"
       elsif won?(board).include?("O")
