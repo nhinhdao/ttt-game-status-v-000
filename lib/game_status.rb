@@ -12,7 +12,7 @@ WIN_COMBINATIONS = [
   [1,4,7], # middle column
   [2,5,8], # right column
   [0,4,8], # left diagonal
-  [2,4,6]  # right diagonal
+  [6,4,2]  # right diagonal
   ]
 
 def won?(board)
@@ -31,7 +31,7 @@ def won?(board)
                    WIN_COMBINATIONS[5]
             elsif board[0] == "X" && board[4] == "X" && board[8] == "X"
                    WIN_COMBINATIONS[6]
-            elsif board[2] == "X" && board[4] == "X" && board[6] == "X"
+            elsif board[6] == "X" && board[4] == "X" && board[2] == "X"
                    WIN_COMBINATIONS[7]
             else
                   false
