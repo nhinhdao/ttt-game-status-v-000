@@ -19,13 +19,13 @@ WIN_COMBINATIONS = [
   ]
 
 def won?(board)
-      binding.pry
+      # binding.pry
 
       WIN_COMBINATIONS.each do |combo|
             board[combo[0]] == board[combo[1]]] && board[combo[1]] == board[combo[2]]] && board[combo[0]] != ' '
       end
 end
-      
+
 #       # WIN_COMBINATIONS.each do |win_combination|
 #             # win_combination.each do |win_index|
 #                   if board[0] == "X" && board[1] == "X" && board[2] == "X"
