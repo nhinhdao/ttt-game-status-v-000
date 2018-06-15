@@ -27,7 +27,7 @@ def won?(board)
                   return WIN_COMBINATIONS[3]
             elsif board[1] == "X" && board[4] == "X" && board[7] == "X"
                   return WIN_COMBINATIONS[4]
-            elsif board[2] == "X" && board[]5] == "X" && board[8] == "X"
+            elsif board[2] == "X" && board[5] == "X" && board[8] == "X"
                   return WIN_COMBINATIONS[5]
             elsif board[0] == "X" && board[4] == "X" && board[8] == "X"
                   return WIN_COMBINATIONS[6]
